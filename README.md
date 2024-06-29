@@ -73,7 +73,7 @@ export STORAGE_LOCATION=$HOME/tmp/anythingllm && \
 mkdir -p $STORAGE_LOCATION && \
 touch "$STORAGE_LOCATION/.env"
 
-podman run -p 3001:3001 \
+podman run \
  -v ${STORAGE_LOCATION}:/app/server/storage:z \
  -v ${STORAGE_LOCATION}/.env:/app/server/.env:z \
  -e STORAGE_DIR="/app/server/storage" \
