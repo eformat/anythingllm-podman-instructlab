@@ -19,7 +19,7 @@ if [ -z "${CMD}" ] || [ "${CMD}" == "start" ]; then
   podman start ilab
   podman start anythingllm
 
-  podman exec ilab /bin/bash -c "cd instructlab; ilab serve &"  
+  podman exec ilab /bin/bash -c "cd instructlab; ilab serve &"
 fi
 
 if [ "${CMD}" == "stop" ]; then
