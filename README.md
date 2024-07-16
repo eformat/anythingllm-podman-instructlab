@@ -37,7 +37,7 @@ chat:
   context: default
   greedy_mode: false
   logs_dir: data/chatlogs
-  model: granite-7b-lab-Q4_K_M
+  model: models/granite-7b-lab-Q4_K_M.gguf
   session: null
   vi_mode: false
   visible_overflow: true
@@ -45,7 +45,7 @@ general:
   log_level: INFO
 generate:
   chunk_word_count: 1000
-  model: granite-7b-lab-Q4_K_M
+  model: models/granite-7b-lab-Q4_K_M.gguf
   num_cpus: 10
   num_instructions: 100
   output_dir: generated
